@@ -1,5 +1,10 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using API.Data;
+using API.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API
 {
@@ -15,14 +20,16 @@ namespace API
         }
 
         [HttpGet]
-        public string GetProducts()
+        public async Task<ActionResult<List<Product>>> GetProducts()
         {
-            return "This will be a list of produc";
+            var products = await _context.Products.ToListAsync();
+
+            return Ok(products);
         }
         [HttpGet("{id}")]
-        public string GetProduct(int id)
+        public async Task <ActionResult<Product>> GetProduct(int id)
         {
-            return "single product";
+            return await _context.Products.FindAsync(id);
         }
     }
 }
