@@ -10,6 +10,7 @@ namespace API
 {
     [ApiController]
     [Route("api/[controller]")]
+    
     public class ProductsController : ControllerBase
     {
         private readonly StoreContext _context;
@@ -26,6 +27,7 @@ namespace API
 
             return Ok(products);
         }
+
         [HttpGet("{id}")]
         public async Task <ActionResult<Product>> GetProduct(int id)
         {
