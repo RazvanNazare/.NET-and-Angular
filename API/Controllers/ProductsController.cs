@@ -1,13 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-<<<<<<< HEAD
 using Core.Entities;
 using Infrastructure.Data;
-=======
-using API.Data;
-using API.Entities;
->>>>>>> c783a0ca4b347893ea90c465bb9c0197521f2ccf
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
