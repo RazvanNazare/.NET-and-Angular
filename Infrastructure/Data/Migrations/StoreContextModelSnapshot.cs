@@ -38,9 +38,6 @@ namespace Infrastructure.Data.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("TEXT");
-
                     b.Property<int>("ProductBrandId")
                         .HasColumnType("INTEGER");
 
@@ -75,6 +72,9 @@ namespace Infrastructure.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
