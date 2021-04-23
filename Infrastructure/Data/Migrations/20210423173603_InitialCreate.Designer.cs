@@ -2,14 +2,16 @@
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Infrastructure.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    partial class StoreContextModelSnapshot : ModelSnapshot
+    [Migration("20210423173603_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -22,31 +24,16 @@ namespace Infrastructure.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Description")
-<<<<<<< HEAD
-                        .IsRequired()
-                        .HasMaxLength(180)
-=======
->>>>>>> c10668b04fb6ccf0bbe2a5e9e909c53e359b3c40
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PictureUrl")
-<<<<<<< HEAD
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
-=======
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
->>>>>>> c10668b04fb6ccf0bbe2a5e9e909c53e359b3c40
 
                     b.Property<int>("ProductBrandId")
                         .HasColumnType("INTEGER");
