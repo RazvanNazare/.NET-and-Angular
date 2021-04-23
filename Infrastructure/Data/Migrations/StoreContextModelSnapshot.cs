@@ -22,11 +22,8 @@ namespace Infrastructure.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Description")
-<<<<<<< HEAD
                         .IsRequired()
                         .HasMaxLength(180)
-=======
->>>>>>> c10668b04fb6ccf0bbe2a5e9e909c53e359b3c40
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
@@ -35,18 +32,14 @@ namespace Infrastructure.Data.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PictureUrl")
-<<<<<<< HEAD
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
-=======
-                        .HasColumnType("TEXT");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
->>>>>>> c10668b04fb6ccf0bbe2a5e9e909c53e359b3c40
 
                     b.Property<int>("ProductBrandId")
                         .HasColumnType("INTEGER");
