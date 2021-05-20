@@ -1,1 +1,1 @@
-Made according to "Learn to build an e-commerce app with .Net Core and Angular" (unfinished, 40/300 lectures done) https://www.udemy.com/course/learn-to-build-an-e-commerce-app-with-net-core-and-angular/
+Made according to "Learn to build an e-commerce app with .Net Core and Angular" (in progress 40/300 lectures done) https://www.udemy.com/course/learn-to-build-an-e-commerce-app-with-net-core-and-angular/
